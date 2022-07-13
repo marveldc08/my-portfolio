@@ -256,3 +256,36 @@ header.sticky{
 .row:hover{
      transform: translateY(-8px);
 }
+.portfolio{
+     background: var(--second-bg-color);
+}
+.portfolio-content{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+     gap: 2rem;
+     align-items: center;
+     margin-top: 4.5rem;
+     cursor: pointer;
+}
+.box img{
+     max-width: 100%;
+     width: 500px;
+     height: auto;
+     border-radius: 10px;
+     margin-bottom: 20px;
+     transition: ease-in all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.box img:hover{
+     transform: scale(1.1);
+}
+.box p{
+     color: var(--second-color);
+     font-size: var(--p-font);
+     margin-bottom: 15px;
+}
+.box h5{
+     color: var(--text-color);
+     font-size: 18px;
+     font-weight: 700;
+     margin-bottom: 15px;
+}
