@@ -7,6 +7,7 @@
      text-decoration: none;
      scroll-behavior: smooth;
      scroll-padding-top: 3.5rem;
+     /* border: 1px solid red; */
 }
 :root{
      --bg-color: #101010;
@@ -17,19 +18,17 @@
      --big-font: 5.3rem;
      --h2-font: 4.2rem;
      --p-font: 1.1rem;
-
 }
 
 body{
      background: var(--bg-color);
      color: var(--text-color);
-     
 }
 header{
      position: fixed;
      width: 100%;
      top: 0;
-     right: 0;
+     left: 0;
      z-index: 1000;
      display: flex;
      align-items: center;
@@ -37,6 +36,8 @@ header{
      background: transparent;
      padding: 25px 10%;
      transition-duration: 2s;
+    
+
 }
 .logo{
      color: var(--text-color);
@@ -46,6 +47,7 @@ header{
 }
 .navbar{
      display: flex;
+     
 }
 .navbar li{
      position: relative;
@@ -98,6 +100,7 @@ header{
 }
 section{
      padding: 120px 10%;
+     
 }
 .home{
      height: 100vh;
@@ -111,6 +114,7 @@ section{
      display: grid;
      grid-template-columns: repeat(1, 1fr);
      align-items: center;
+     border: 1px solid red;
 }
 .home-text h1{
      margin: 20px 0px 20px;
@@ -252,6 +256,7 @@ header.sticky{
      gap: 2rem;
      align-items: center;
      margin-top: 4.5rem;
+     border: 1px solid red;
 }
 .row{
      background: var(--second-bg-color);
@@ -259,6 +264,7 @@ header.sticky{
      border-radius:  10px;
      cursor: pointer;
      transition: all .3s;
+     border: 1px solid red;
 }
 .row i{
      color: var(--main-color);
@@ -475,6 +481,42 @@ header.sticky{
           width: 760px;
           height: auto;
      }
+}
 
-
+@media  (max-width: 450px){
+     :root{
+          --big-font: 3rem;
+          --h2-font: 2rem;
+          --p-font: 1.1rem;
+        
+     }
+     .logo{
+          font-size: 19px;
+     }
+     .h-btn{
+           padding: 0 15px;
+     }
+     header{
+           padding: 15px 5%;
+           width: 100vw;
+          border: 1px solid yellow;
+     }
+     .newsletter form{
+          width: 260px;
+     }
+     .home{
+          width: auto;
+     }
+     .service-content{
+           grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+     }
+     .row{
+          padding: 40px 20px;
+     }
+      .portfolio-content{
+         
+          grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+         
+     }
+    
 }
